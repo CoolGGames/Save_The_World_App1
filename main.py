@@ -12,8 +12,6 @@ def submit_form():
     contactno = request.form['contactno']
     aspiration = request.form['aspiration']
     
-    # Do something with the form data here, such as saving to a database
-    
     return 'Thanks for submitting the form!'
 
 if __name__ == '__main__':
