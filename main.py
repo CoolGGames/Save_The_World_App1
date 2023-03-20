@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('form.html')
 
+@app.route('/3rs')
+def next_page():
+    return render_template('3rs.html')
+
 @app.route('/submit_form', methods=['POST'])
 def submit_form():
     name = request.form['name']
